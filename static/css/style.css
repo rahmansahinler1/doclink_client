@@ -1,23 +1,21 @@
-html, body {
-    height: 100%;
-    overflow-x: hidden;
+.hover-bg {
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border-radius: 0.4rem;
 }
 
-.sidebar {
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    border-right: 1px solid #dee2e6;
+.hover-bg::before {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    background-color: transparent;
+    border-radius: 0.4rem;
 }
 
-.sidebar .nav-link {
-    color: #333;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    margin: 0.2rem 0;
-}
-
-.sidebar .nav-link:hover, .sidebar .nav-link.active {
-    background-color: rgba(13, 110, 253, 0.1);
-    color: #0d6efd;
+.hover-bg:hover::before {
+    background-color: rgba(93, 93, 93, 0.2);
 }

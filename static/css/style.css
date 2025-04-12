@@ -1,22 +1,17 @@
 /* Hovering effect */
-.hover-bg {
-    position: relative;
-    display: inline-block;
+.hover-btn {
     transition: background-color 0.3s ease;
     border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem;
 }
 
-.hover-bg::before {
-    content: '';
-    position: absolute;
-    top: -0.5rem;
-    left: -0.5rem;
-    right: -0.5rem;
-    bottom: -0.5rem;
-    background-color: transparent;
+.hover-btn:hover {
+    background-color: rgba(93, 93, 93, 0.1);
+}
+
+
+.hover-row:hover {
+    background-color: rgba(93, 93, 93, 0.1);
     border-radius: 0.4rem;
 }
 
-.hover-bg:hover::before {
-    background-color: rgba(93, 93, 93, 0.2);
-}

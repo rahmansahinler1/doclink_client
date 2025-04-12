@@ -14,13 +14,25 @@
     <div class="container-fluid p-0" style="background-color: #FFFFFF;">
         <!-- Sidebar -->
         <div class="col-md-3 p-0" style="background-color: #F9F9F9; height: 100vh;">
-            <!-- Sidebar Header -->
+            <!-- Header -->
             <div class="d-flex p-3 justify-content-between align-items-center">
-                <button type="button" class="btn p-0 border-0 hover-bg" id="button-sidebar-trigger">
+                <button type="button" class="btn border-0 hover-btn" id="button-sidebar-trigger">
                     <i class="bi bi-layout-text-sidebar fs-4" style="color: #5D5D5D;"></i>
                 </button>
-                <button type="button" class="btn p-0 border-0 hover-bg" id="button-sidebar-search">
+                <button type="button" class="btn border-0 hover-btn" id="button-sidebar-search">
                     <i class="bi bi-search fs-4" style="color: #5D5D5D;"></i>
+                </button>
+            </div>
+            <!-- Folders -->
+            <div class="d-flex justify-content-between align-items-center px-3 py-2 w-100 hover-row">
+                <!-- Folder button -->
+                <button type="button" class="btn p-0 border-0 d-flex align-items-center flex-grow-1 text-start">
+                    <i class="bi bi-folder fs-5 me-2" style="color: #5D5D5D;"></i>
+                    <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 16px;">Default</span>
+                </button>
+                <!-- Options button -->
+                <button type="button" class="btn p-0 border-0">
+                    <i class="bi bi-three-dots" style="color: #5D5D5D;"></i>
                 </button>
             </div>
         </div>
@@ -28,9 +40,9 @@
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </html>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- Custom JS -->
     <script src="../static/js/main.js"></script>
 </body>
-</html>

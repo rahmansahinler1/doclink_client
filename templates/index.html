@@ -11,94 +11,75 @@
 </head>
 <body>
     <!-- Base container -->
-    <div class="container-fluid p-0" style="background-color: #FFFFFF;">
+    <div class="app-container container-fluid p-0" style="background-color: #FFFFFF;">
         <!-- Sidebar -->
-        <div class="col-md-3 p-0 d-flex flex-column" style="background-color: #F9F9F9; height: 100vh;">
-            <!-- Top section -->
-             <div class="flex-grow-1 d-flex flex-column">
-                <!-- Header -->
-                <div class="d-flex p-3 justify-content-between align-items-center">
-                    <button type="button" class="btn border-0 hover-btn" id="button-sidebar-trigger">
-                        <i class="bi bi-layout-text-sidebar fs-4" style="color: #5D5D5D;"></i>
-                    </button>
-                    <button type="button" class="btn border-0 hover-btn" id="button-sidebar-search">
-                        <i class="bi bi-search fs-4" style="color: #5D5D5D;"></i>
-                    </button>
-                </div>
-                <!-- Folder group block -->
-                <div class="px-3 py-2 folder-group">
-                    <!-- Folder Row -->
-                    <div class="d-flex justify-content-between align-items-center w-100 hover-row">
-                        <!-- Folder button -->
+        <div class="app-sidebar d-flex flex-column" style="overflow:hidden">
+            <div class="col d-flex flex-column">
+                <!-- Top section -->
+                <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Header -->
+                    <div class="d-flex p-3 justify-content-between align-items-center">
+                        <button type="button" class="btn border-0 hover-btn" id="button-sidebar-trigger">
+                            <i class="bi bi-layout-text-sidebar fs-4" style="color: #5D5D5D;"></i>
+                        </button>
+                        <button type="button" class="btn border-0 hover-btn" id="button-sidebar-search">
+                            <i class="bi bi-search fs-4" style="color: #5D5D5D;"></i>
+                        </button>
+                    </div>
+                    <!-- Folder group block -->
+                    <div class="px-3 py-2 folder-group">
+                        <!-- Folder Row -->
+                        <div class="d-flex justify-content-between align-items-center w-100 hover-row">
+                            <!-- Folder button -->
+                            <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
+                                <i class="bi bi-folder fs-5 me-2" style="color: #5D5D5D;"></i>
+                                <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Business Report</span>
+                            </button>
+                            <!-- Options button -->
+                            <button type="button" class="btn border-0">
+                                <i class="bi bi-three-dots" style="color: #5D5D5D;"></i>
+                            </button>
+                        </div>
+                        <!-- File Count Placeholder -->
+                        <div class="d-flex align-items-center ms-3 mt-0">
+                            <i class="bi bi-chevron-right me-1 text-muted" style="font-size: 0.9rem;"></i>
+                            <span class="text-muted" style="font-size: 12px; font-family: ui-sans-serif, -apple-system, system-ui;">3 Files</span>
+                        </div>
+                    </div>
+                    <!-- Create Folder Row -->
+                    <div class="px-3 py-2">
+                        <div class="d-flex justify-content-between align-items-center w-100 hover-row">
                         <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
-                            <i class="bi bi-folder fs-5 me-2" style="color: #5D5D5D;"></i>
-                            <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Business Report</span>
-                        </button>
-                        <!-- Options button -->
-                        <button type="button" class="btn border-0">
-                            <i class="bi bi-three-dots" style="color: #5D5D5D;"></i>
-                        </button>
-                    </div>
-                    <!-- File Count Placeholder -->
-                    <div class="d-flex align-items-center ms-3 mt-0">
-                        <i class="bi bi-chevron-right me-1 text-muted" style="font-size: 0.9rem;"></i>
-                        <span class="text-muted" style="font-size: 12px; font-family: ui-sans-serif, -apple-system, system-ui;">3 Files</span>
-                    </div>
-                    <!-- Folder Row -->
-                    <div class="d-flex justify-content-between align-items-center w-100 hover-row">
-                        <!-- Folder button -->
-                        <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
-                            <i class="bi bi-folder fs-5 me-2" style="color: #5D5D5D;"></i>
-                            <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Daily Files</span>
-                        </button>
-                        <!-- Options button -->
-                        <button type="button" class="btn border-0">
-                            <i class="bi bi-three-dots" style="color: #5D5D5D;"></i>
-                        </button>
-                    </div>
-                    <!-- File Count Placeholder -->
-                    <div class="d-flex align-items-center ms-3 mt-0">
-                        <i class="bi bi-chevron-right me-1 text-muted" style="font-size: 0.9rem;"></i>
-                        <span class="text-muted" style="font-size: 12px; font-family: ui-sans-serif, -apple-system, system-ui;">13 Files</span>
-                    </div>
-                    <!-- Folder Row -->
-                    <div class="d-flex justify-content-between align-items-center w-100 hover-row">
-                        <!-- Folder button -->
-                        <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
-                            <i class="bi bi-folder fs-5 me-2" style="color: #5D5D5D;"></i>
-                            <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Project X</span>
-                        </button>
-                        <!-- Options button -->
-                        <button type="button" class="btn border-0">
-                            <i class="bi bi-three-dots" style="color: #5D5D5D;"></i>
-                        </button>
-                    </div>
-                    <!-- File Count Placeholder -->
-                    <div class="d-flex align-items-center ms-3 mt-0">
-                        <i class="bi bi-chevron-right me-1 text-muted" style="font-size: 0.9rem;"></i>
-                        <span class="text-muted" style="font-size: 12px; font-family: ui-sans-serif, -apple-system, system-ui;">1 File</span>
+                                <i class="bi bi-folder-plus fs-5 me-2 text-muted"></i>
+                                <span class="fw-light text-muted" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Create Folder</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <!-- Create Folder Row -->
-                <div class="px-3 py-2">
-                    <div class="d-flex justify-content-between align-items-center w-100 hover-row">
+                <!-- Upgrade section -->
+                <div class="p-3">
+                    <div class="d-flex align-items-center hover-row w-100 rounded">
                         <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
-                            <i class="bi bi-folder-plus fs-5 me-2 text-muted"></i>
-                            <span class="fw-light text-muted" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Create Folder</span>
+                            <i class="bi bi-stars fw-semibold me-2" style="color: #5D5D5D;"></i>
+                            <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 12px;">Get Plus</span>
                         </button>
                     </div>
                 </div>
-             </div>
-            <!-- Upgrade section -->
-            <div class="p-3">
-                <div class="d-flex align-items-center hover-row w-100 rounded">
-                    <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
-                        <i class="bi bi-stars fw-semibold me-2" style="color: #5D5D5D;"></i>
-                        <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 12px;">Get Plus</span>
-                    </button>
-                </div>
-            </div>
+            </div> 
         </div>
+        <!-- Navbar -->
+        <nav class="app-navbar d-flex justify-content-between align-items-center">
+            <!-- App Name -->
+            <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 16px;">Doclink</span>
+            <!-- User Icon -->
+            <button type="button" class="btn border-0 hover-btn">
+                <i class="bi bi-person-circle fs-5" style="color: #5D5D5D;"></i>
+            </button>
+        </nav>
+        <div class="app-content">
+            <p>Main Content</p>
+        </div>          
+        
     </div>
     
     <!-- Bootstrap JS -->

@@ -14,3 +14,36 @@
     border-radius: 0.4rem;
 }
 
+/* Application Main Parts*/
+.app-container {
+    display: flex;
+}
+
+.app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 248px;
+    height: 100vh;
+    background-color: #F9F9F9;
+    z-index: 1000;
+}
+
+.app-navbar {
+    position: fixed;
+    top: 0;
+    left: 248px;
+    width: calc(100% - 248px);
+    height: 56px;
+    background-color: #FFFFFF;
+    z-index: 900;
+    border-bottom: 1px solid #ddd;
+}
+
+.app-content {
+    position: fixed;
+    top: 56px;
+    left: 248px;
+    width: calc(100% - 248px);
+}
+

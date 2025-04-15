@@ -18,7 +18,7 @@
                 <!-- Top section -->
                 <div class="flex-grow-1 d-flex flex-column">
                     <!-- Header -->
-                    <div class="d-flex p-3 justify-content-between align-items-center">
+                    <div class="sidebar-header d-flex p-3 justify-content-between align-items-center">
                         <button type="button" class="btn border-0 hover-btn" id="button-sidebar-trigger">
                             <i class="bi bi-layout-text-sidebar fs-4" style="color: #5D5D5D;"></i>
                         </button>
@@ -68,14 +68,18 @@
             </div> 
         </div>
         <!-- Navbar -->
-        <nav class="app-navbar d-flex justify-content-between align-items-center">
-            <!-- App Name -->
-            <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 16px;">Doclink</span>
+        <nav class="app-navbar d-flex justify-content-between align-items-center border-0 px-3">
+            <!-- Doclink Button -->
+            <button type="button" class="btn border-0 navbar-btn hover-btn">
+                <span class="fw-light" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 20px;">Doclink</span>
+                <i class="bi bi-chevron-right ms-1" style="font-size: 0.9rem; color: #5D5D5D;"></i>
+            </button>
+        
             <!-- User Icon -->
-            <button type="button" class="btn border-0 hover-btn">
+            <button type="button" class="btn border-0 navbar-btn hover-btn">
                 <i class="bi bi-person-circle fs-5" style="color: #5D5D5D;"></i>
             </button>
-        </nav>
+        </nav>        
         <div class="app-content">
             <p>Main Content</p>
         </div>          

@@ -63,7 +63,7 @@
                 </div>
                 <!-- Upgrade section -->
                 <div class="p-3">
-                    <div class="d-flex align-items-center hover-row w-100 rounded">
+                    <div class="d-flex align-items-center hover-row w-100">
                         <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
                             <i class="bi bi-stars fw-semibold me-2" style="color: #5D5D5D;"></i>
                             <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 12px;">Get Plus</span>
@@ -84,10 +84,31 @@
             <button type="button" class="btn border-0 navbar-btn hover-btn">
                 <i class="bi bi-person-circle fs-5" style="color: #5D5D5D;"></i>
             </button>
-        </nav>        
-        <div class="app-content">
-            <p>Main Content</p>
-        </div>          
+        </nav>
+        <!-- Main Content  -->
+        <div class="app-content d-flex flex-column">
+            <!-- Message history area -->
+            <div class="chat-history flex-grow-1 overflow-auto p-3">
+                <!-- User message -->
+                <div class="d-flex justify-content-end mb-3">
+                    <div class="user-message-bubble border-0 px-3 py-2 rounded-3" style="background-color: #F9F9F9;">
+                        What is X?
+                    </div>
+                </div>
+                <!-- AI message -->
+                <div class="d-flex justify-content-start mb-3">
+                    <div class="ai-message-bubble bg-transparent border-0 px-3 py-2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Chat input area -->
+            <div class="chat-input border-top p-3 d-flex">
+                <input type="text" class="form-control me-2" placeholder="Ask something...">
+                <button class="btn btn-primary">Send</button>
+            </div>
+        </div>              
     </div>
     <!-- Custom JS -->
     <script src="../static/js/main.js"></script>

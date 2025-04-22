@@ -63,21 +63,32 @@
     background-color: #fff;
 }
 
-.ai-message-bubble,
-.user-message-bubble {
+.message-container {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.ai-message,
+.user-message {
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
     font-size: 16px;
     font-family: ui-sans-serif, -apple-system, system-ui;
     word-break: break-word;
 }
 
-@media (min-width: 1200px) {
-    .ai-message-wrapper {
-        margin-left: 30%;
-    }
-
-    .user-message-wrapper {
-        margin-right: 20%;
-        max-width: 766px;
-    }
+.ai-message {
+    background-color: transparent;
+    flex-grow: 1;
+    align-self: flex-start;
 }
 
+.user-message {
+    background-color: #F9F9F9;
+    margin-left: auto;
+    width: 50%;
+}

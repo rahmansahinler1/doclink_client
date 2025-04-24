@@ -24,10 +24,10 @@
                 <div class="flex-grow-1 d-flex flex-column">
                     <!-- Header -->
                     <div class="sidebar-header d-flex p-3 justify-content-between align-items-center">
-                        <button type="button" class="btn border-0 hover-btn" id="button-sidebar-trigger">
+                        <button type="button" class="btn hover-btn" id="button-sidebar-trigger">
                             <i class="bi bi-layout-text-sidebar fs-4" style="color: #5D5D5D;"></i>
                         </button>
-                        <button type="button" class="btn border-0 hover-btn" id="button-sidebar-search">
+                        <button type="button" class="btn hover-btn" id="button-sidebar-search">
                             <i class="bi bi-search fs-4" style="color: #5D5D5D;"></i>
                         </button>
                     </div>
@@ -36,7 +36,7 @@
                         <!-- Folder Row -->
                         <div class="d-flex justify-content-between align-items-center w-100 hover-row">
                             <!-- Folder button -->
-                            <button type="button" class="btn border-0 d-flex align-items-center flex-grow-1 text-start">
+                            <button type="button" class="btn d-flex align-items-center flex-grow-1 text-start">
                                 <i class="bi bi-folder fs-5 me-2" style="color: #5D5D5D;"></i>
                                 <span class="fw-semibold" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 14px;">Business Report</span>
                             </button>
@@ -75,13 +75,13 @@
         <!-- Navbar -->
         <nav class="app-navbar d-flex justify-content-between align-items-center border-0 px-3">
             <!-- Doclink Button -->
-            <button type="button" class="btn border-0 navbar-btn hover-btn">
+            <button type="button" class="btn navbar-btn hover-btn">
                 <span class="fw-light" style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 18px;">Doclink</span>
                 <i class="bi bi-chevron-right ms-1" style="font-size: 0.9rem; color: #5D5D5D;"></i>
             </button>
         
             <!-- User Icon -->
-            <button type="button" class="btn border-0 navbar-btn hover-btn">
+            <button type="button" class="btn navbar-btn hover-btn">
                 <i class="bi bi-person-circle fs-5" style="color: #5D5D5D;"></i>
             </button>
         </nav>
@@ -90,73 +90,28 @@
             <!-- Message history area -->
             <div class="chat-history flex-grow-1 overflow-auto">
                 <!-- User message -->
-                <div class="message-container d-flex justify-content-end mb-3">
-                    <div class="user-message">What is X?</div>
+                <div class="message-container d-flex justify-content-end mb-2">
+                    <div class="user-message fs-6">What is X?</div>
                 </div>
                 <!-- AI message -->
                 <div class="message-container d-flex justify-content-start mb-3">
-                    <div class="ai-message">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
-                    </div>
-                </div>
-                <!-- User message -->
-                <div class="message-container d-flex justify-content-end mb-3">
-                    <div class="user-message">What is X?</div>
-                </div>
-                <!-- AI message -->
-                <div class="message-container d-flex justify-content-start mb-3">
-                    <div class="ai-message">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
-                    </div>
-                </div>
-                <!-- User message -->
-                <div class="message-container d-flex justify-content-end mb-3">
-                    <div class="user-message">What is X?</div>
-                </div>
-                <!-- AI message -->
-                <div class="message-container d-flex justify-content-start mb-3">
-                    <div class="ai-message">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
-                    </div>
-                </div>
-                <!-- User message -->
-                <div class="message-container d-flex justify-content-end mb-3">
-                    <div class="user-message">What is X?</div>
-                </div>
-                <!-- AI message -->
-                <div class="message-container d-flex justify-content-start mb-3">
-                    <div class="ai-message">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
-                    </div>
-                </div>
-                <!-- User message -->
-                <div class="message-container d-flex justify-content-end mb-3">
-                    <div class="user-message">What is X?</div>
-                </div>
-                <!-- AI message -->
-                <div class="message-container d-flex justify-content-start mb-3">
-                    <div class="ai-message">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
-                    </div>
-                </div>
-                <!-- User message -->
-                <div class="message-container d-flex justify-content-end mb-3">
-                    <div class="user-message">What is X?</div>
-                </div>
-                <!-- AI message -->
-                <div class="message-container d-flex justify-content-start mb-3">
-                    <div class="ai-message">
+                    <div class="ai-message fs-6">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quae ad eos officia, iste corporis? Quidem sit blanditiis recusandae obcaecati hic facere exercitationem, eligendi corporis esse, numquam quam debitis veritatis!
                     </div>
                 </div>
             </div>
             <!-- Chat input area -->
             <div class="message-input-box align-items-center justify-content-between">
-                <input type="text" class="message-input-field" placeholder="Ask something..." />
+                <input
+                  type="text"
+                  class="message-input-field"
+                  placeholder="Ask something..."
+                  style="font-family: ui-sans-serif, -apple-system, system-ui; font-size: 16px;"
+                />
                 <button type="button" class="btn border-3">
-                    <i class="bi bi-arrow-up-circle ms-1" style="font-size: 1.2rem;"></i>
+                  <i class="bi bi-arrow-up-circle ms-1" style="font-size: 1.2rem;"></i>
                 </button>
-            </div>
+              </div>
         </div>              
     </div>
     <!-- Custom JS -->

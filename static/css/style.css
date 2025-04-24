@@ -53,14 +53,13 @@
     height: calc(100vh - 96px);
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
   
   .chat-history {
-    overflow-y: auto;
     flex-grow: 1;
-    padding: 1rem;
-    padding-bottom: 140px; /* makes room for fixed input box */
+    overflow-y: auto;
+    padding: 16px 16px 96px 16px; /* enough room for input below */
   }
   
   .message-container {
@@ -94,13 +93,13 @@
   
   /* Input box placed naturally with bottom padding */
   .message-input-box {
-    position: fixed;
+    position: absolute;
     bottom: 24px;
     left: 0;
     right: 0;
-    width: 60%;
-    max-width: 800px;
     margin: 0 auto;
+    max-width: 800px;
+    width: 60%;
     display: flex;
     align-items: center;
     background-color: white;
@@ -109,8 +108,6 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
     z-index: 100;
   }
-  
-  
   
   .message-input-field {
     flex-grow: 1;
